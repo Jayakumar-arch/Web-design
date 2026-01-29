@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #a{
+         height: 800px;
+            width: 1450px;
+            padding: 50px; 
+            background-color:aqua
+       }
+       #b{
+         height: 700px;
+            width: 1400px;
+            background-color: rgb(244, 240, 235);
+            margin-right: 100px;
+       }
+       p{
+         font-size: 25px;
+       }
+       .current{
+        margin-left: 330px;
+        margin-top: -5px;
+       }
+       #freeCode{
+        margin-left: 180px;
+       }
+       #Maybe {
+         margin-left:635px;
+       }
+       .code{
+        margin-left: 430px;
+       } 
+       #apply{
+         margin-left: 200px;
+       }
+      #Back{
+         margin-left: 637px;
+      }
+      #data{
+         margin-left: 637px;
+      }
+    </style>
+</head>
+<body>
+    <div id="a">
+        <center>
+        <h1>Survey Form</h1>
+        </center>
+        <div id="b">
+            <form>
+                <center>
+                    <br>
+                    <p>Let us know how we can improve freeCode Camp</p>
+                    <label for="name">Name</label>
+                    <input type="text" name="fname" id="fname" placeholder="Enter your name"> <br><br>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email"> <br><br>
+                    <label for="age">Age</label>
+                    <input type="number" name="age" id="age" placeholder="Enter your Age"><br><br>
+                </center>
+                   <blockquote class="current">
+                    <label for="current role">Which option best describes your current role?</label>
+                   <input list="role">
+                   <datalist id="role"> 
+                   <option value="Student">
+                   <option value="business">
+                   </datalist>
+                  </blockquote><br>
+                  <label  id="freeCode"  for="freeCode">How likely is that you would recommend freeCode Camp to a friend?
+                  </label>
+                   <input type="radio" name="" id="">
+                  <label  for="Definitely">Definitely</label><br>
+                  <input type="radio" name="" id="Maybe">
+                  <label  for="Maybe">Maybe</label><br>
+                  <input type="radio" name="" id="Maybe">
+                  <label  id="Not" for="Not sure">Not sure</label><br> <br>
+                  <blockquote class="code">
+                  <label for="FCC">What do you like most in FCC:</label>
+                  <input list="FCC" placeholder="Selectc an option">
+                  <datalist id="FCC"> 
+                  <option value="HTML ,CSS">
+                  <option value="Python"> 
+                  <option value=" C++">
+                  <option value="Java">
+                  </datalist>
+                  </blockquote><br>
+                  <label id="apply" for="apply">Things that should be improved in the futher (check all that apply):</label>
+                  <input type="checkbox" name="" id="">
+                  <label for="Front-end Project">Front-end Project</label><br>
+                  <input type="checkbox" name="" id="Back">
+                  <label for=" Back">Back-end Project</label><br>
+                  <input type="checkbox" name="" id="data">
+                  <label for="data">Data Visualization</label>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
